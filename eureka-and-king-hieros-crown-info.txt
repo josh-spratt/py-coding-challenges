@@ -1,0 +1,18 @@
+Python Challenge
+
+In this Python challenge we will use a program to help identify the density of an object and compare with the known density of different metals such as gold, silver, bronze, etc.
+Our algorithm will:
+
+Ask the user to enter the mass of an object. (in Kg)
+Ask the user to enter the volume of an object. (in m3)
+Calculate and output the density of this object (mass/volume)
+Compare this density with the densities of different metals such as pure gold, silver and bronze and output the corresponding metal if there is a match.
+Our algorithm will use the following data:
+
+Metal	Density
+Aluminium	Between 2400 kg/m3 and 2700 kg/m3
+Bronze	Between 8100 kg/m3 and 8300 kg/m3
+Silver	Between 10400 kg/m3 and 10600 kg/m3
+Lead	Between 11200 kg/m3 and 11400 kg/m3
+Gold	Between 17100 kg/m3 and 17500 kg/m3
+Platinum	Between 21000 kg/m3 and 21500 kg/m3
