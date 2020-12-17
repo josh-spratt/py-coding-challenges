@@ -16,7 +16,6 @@ def import_density_values_csv(csv_file):
         accepted_density_values_list = []
         for row in reader:
             row['density_range'] = row['density_range'].replace('-',',').split(',')
-            row['density_range'] = list(range(int(row['density_range'][0]), int(row['density_range'][1])))
             accepted_density_values_list.append(row)
     return accepted_density_values_list
 
@@ -24,7 +23,9 @@ def import_density_values_csv(csv_file):
 def take_density_calc_and_search_for_metals(density, accepted_density_values_list):
     # searches within the list of dicts to find the metal which matches the density
     for dict in accepted_density_values_list:
-        if int(density) in dict['density_range']:
+        #print(dict['density_range'][0])
+        #print(dict['density_range'][1])
+        if density > float(dict['density_range'][0]) and density < float(dict['density_range'][1]):
             return dict['metal']
 
 
