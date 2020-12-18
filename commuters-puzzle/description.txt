@@ -1,0 +1,10 @@
+Yuri lives in Oxford, UK and commutes by train to his work place in London every working day of the week (5 days a week).
+One evening, Yuri spot the Moon through the train window and asked himself the following question:
+“In how many years will I have travelled the equivalent distance of going to the Moon and back due to my daily commute?”
+On a piece of paper Yuri has gathered some data needed to answer this question: (see puzzle-data.csv)
+
+He has also drawn the following flowchart to help him find the answer. His intention was to then use some Python code to implement this flowchart and work out the answer to his question. This algorithm is a sequencing algorithm based on the following steps:
+
+Work out the total distance travelled over a year (in km).
+Work out the distance of a return journey to the Moon (in km).
+The number of years can be calculated by dividing the distance of a return journey to the Moon by the total distance travelled over a year.
