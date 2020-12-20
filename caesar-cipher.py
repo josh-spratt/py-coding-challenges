@@ -17,13 +17,15 @@
     Note: You can assume the plain text is all lowercase ASCII except for
     whitespace and punctuation.
 """
-n = 5
+# this is mostly solid but still have to figure out the nitty gritty details
+
+n = 2
 alphabet_string = 'abcdefghijklmnopqrstuvwxyz'
 alphabet_list = []
 for letter in alphabet_string:
     alphabet_list.append(letter)
 
-input_string = 'this is an example of the input string'
+input_string = 'abcdefghijklmnopqrstuvwxyz'
 output_string = ""
 
 for letter in input_string:
@@ -33,7 +35,7 @@ for letter in input_string:
             if list_index <= len(alphabet_list)-n-1:
                 letter = alphabet_list[list_index+n]
                 output_string += letter
-            if list_index >= len(alphabet_list)-n:
+            if list_index >= len(alphabet_list)-n-1:
                 letter = alphabet_list[(list_index+n)-26]
                 output_string += letter
     if letter == " ":
